@@ -1,5 +1,5 @@
 {
-  "name": "angular-formio",
+  "name": "eaymon-angular-formio",
   "version": "2.0.0-rc.3",
   "scripts": {
     "build": "gulp build",
@@ -11,25 +11,25 @@
     "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
     "lite": "lite-server",
     "build:demo": "webpack --mode=development",
-    "demo": "gulp build; concurrently --raw \"webpack-dev-server --open\" \"npm run test:watch\"",
+    "demo": "gulp build; concurrently --raw \"webpack-dev-server --open\"",
     "publish": "gulp build; gulp package-version; npm publish dist",
     "test": "tsc && karma start",
     "test:watch": "karma start --auto-watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/formio/angular-formio"
+    "url": "https://github.com/eaymon/angular-formio"
   },
   "author": {
-    "name": "Travis Tidwell",
-    "email": "travis@form.io"
+    "name": "Eaymon Latif",
+    "email": "main@eaymon.com"
   },
   "keywords": [
     "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/formio/angular-formio/issues"
+    "url": "https://github.com/eaymon/angular-formio/issues"
   },
   "devDependencies": {
     "@angular/common": "^5.0.0",
@@ -102,7 +102,7 @@
     "zone.js": "^0.8.14"
   },
   "dependencies": {
-    "formiojs": "^3.0.0-rc.14",
+    "formiojs": "^3.0.0-rc.26",
     "lodash": "^4.17.5",
     "ngx-bootstrap": "^2.0.3"
   }

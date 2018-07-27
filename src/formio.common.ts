@@ -50,6 +50,7 @@ export interface FormioForm {
   tags?: string[];
   access?: AccessSetting[];
   submissionAccess?: AccessSetting[];
+  settings: any;
 }
 
 export interface AlertsOptions {
@@ -87,4 +88,5 @@ export interface FormioOptions {
   i18n?: object;
   fileService?: object;
   hooks?: FormioHookOptions;
+  builder?:object;
 }
